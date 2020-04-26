@@ -4,7 +4,7 @@ This is vue starter repository without vue-cli
 
 This This vue starter consists of **eslint**, **prettier**, **webpack**.
 
-# How to ?
+# How to made?
 
 ## install
 
@@ -17,31 +17,27 @@ This This vue starter consists of **eslint**, **prettier**, **webpack**.
 > npm i -D @babel/core @babel/preset-env babel-loader css-loader eslint eslint-config-prettier eslint-plugin-prettier eslint-plugin-vue html-webpack-plugin vue-loader vue-style-loader vue-template-compiler webpack webpack-cli webpack-dev-server
 ```
 
-> @babel/core, @babel/preset-env : Convert ES6 code to ES5 code
+> **@babel/core, @babel/preset-env** : Convert ES6 code to ES5 code
 
-> babel-loader : Convert ES6 code to ES5 code (Need help with dependencies between @ babel / core and @ babel / preset-env)
+> **babel-loader** : Convert ES6 code to ES5 code (Need help with dependencies between @ babel / core and @ babel / preset-env)
 
-> webpack : Necessary for bundling
+> **webpack** : Necessary for bundling
 
-> webpack-cli :
-> Needed to run Webpack command
+> **webpack-cli** : Needed to run Webpack command
 
-> webpack-dev-server : Tools useful when developing locally
+> **webpack-dev-server** : Tools useful when developing locally
 
-> vue-loader :
-> Converts vue files to JavaScript files when bundled in Webpack
+> **vue-loader** : Converts vue files to JavaScript files when bundled in Webpack
 
-> css-loader :
-> Get the CSS you've written into the .vue file or the CSS you want to import into the JavaScript file and check the path to that file.
+> **css-loader** : Get the CSS you've written into the .vue file or the CSS you want to import into the JavaScript file and check the path to that file.
 
-> vue-style-loader :
-> Insert CSS imported into css-loader into an HTML file. This creates and inserts a style tag in the header part of the HTML document.
+> **vue-style-loader** : Insert CSS imported into css-loader into an HTML file. This creates and inserts a style tag in the header part of the HTML document.
 
-> eslint, eslint-plugin-vue, eslint-plugin-prettier, eslint-config-prettier : Files needed for eslint & prettier setup
+> **eslint, eslint-plugin-vue, eslint-plugin-prettier, eslint-config-prettier** : Files needed for eslint & prettier setup
 
-> html-webpack-plugin : Take index.html and insert the bundled JavaScript file into the header. Then copy to dist folder
+> **html-webpack-plugin** : Take index.html and insert the bundled JavaScript file into the header. Then copy to dist folder
 
-> vue-template-compiler : Converts vue files to JavaScript files when bundled in Webpack
+> **vue-template-compiler** : Converts vue files to JavaScript files when bundled in Webpack
 
 ## .babelrc.js
 
@@ -133,4 +129,35 @@ module.exports = {
 };
 
 
+```
+
+# How to use ?
+
+```
+> mkdir <<make folder name>>
+> cd <<make folder name>>
+> git clone https://github.com/BBackjk/vue-starter.git
+> npm install     // or npm i
+```
+
+## dev run
+
+```
+npm run dev
+```
+
+## build run
+
+```
+npm run build
+```
+
+You should now have a bundled file called bundle.js in a folder called dist.
+
+If you want to change the folder name and file name, edit webpack.config.js **output**
+
+## lint
+
+```
+npm run lint
 ```
